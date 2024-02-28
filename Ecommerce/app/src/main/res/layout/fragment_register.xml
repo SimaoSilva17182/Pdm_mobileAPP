@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="@string/ConfirmPassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnCancelRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:text="@string/CancelRegister"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPassword"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008806"
+        android:text="@string/Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelRegister"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPassword"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordRegister"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

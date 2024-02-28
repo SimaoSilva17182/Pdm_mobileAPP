@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">E-commerce</string>
+    <string name="title_activity_login">login</string>
+    <string name="Username">Utilizador</string>
+    <string name="Password">Palavra-passe</string>
+    <string name="Register">Registar</string>
+    <string name="Login">Iniciar sessão</string>
+    <string name="ConfirmPassword">Confirmar palavra-passe</string>
+    <string name="Name">Nome</string>
+    <string name="CancelRegister">Cancelar</string>
+    <string name="Confirm">Confirmar</string>
+    <string name="Email">Email</string>
+    <string name="Cart">Carrinho</string>
+    <string name="AddToCart">Adicionar ao Carrinho</string>
+    <string name="AddToCart2">Carrinho</string>
+    <string name="Logout">Sair</string>
+    <string name="Buy">Comprar</string>
+    <string name="Remove">Remover</string>
+    <string name="ConfirmRemove">Confirmar Remoção</string>
+    <string name="RemoveItem">Remover</string>
+    <string name="AddItem">Adicionar</string>
+    <string name="ProductName">Nome do Produto</string>
+    <string name="Quantity">Quantidade</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="ItemName">Nome do Item</string>
+    <string name="Quantity_1">Quantidade: 1</string>
+    <string name="AuthenticationFailed">Autenticação falhada</string>
+    <string name="AskUser">Por favor, introduza o nome de utilizador e a palavra-passe</string>
+    <string name="ErrorReg">Erro durante o registo. Tente novamente</string>
+    <string name="Error_Email">Endereço de email já em uso</string>
+    <string name="Error_Email_Justi">Endereço de email já em uso. Por favor, tente outro</string>
+    <string name="Error_Pass">PALAVRA-PASSE_FRACA</string>
+    <string name="Error_Pass_Justi">A palavra-passe deve ter pelo menos 6 caracteres</string>
+    <string name="Error_Invalid_Email">EMAIL_INVALIDO</string>
+    <string name="Error_Invalid_Email_Justi">Endereço de email inválido</string>
+    <string name="Error_PassMatch">Palavra-passe não corresponde</string>
+    <string name="Error_EmailFormat">Formato de email inválido</string>
+    <string name="Error_Caracters">A palavra-passe deve ter pelo menos 6 caracteres</string>
+    <string name="Error_EmptyFields">Todos os campos devem ser preenchidos</string>
+    <string name="RegistrationSuccess">Registo bem-sucedido</string>
+    <string name="Ok">OK</string>
+    <string name="ChoosePhoto">Por favor, escolha uma foto</string>
+    <string name="Quantity_Error">A quantidade deve ser pelo menos 1</string>
+    <string name="InvalidQuantity">A quantidade tem de ser um numero</string>
+    <string name="EmptyFields_Error">O nome do produto não pode estar vazio</string>
+    <string name="PhotoOptions">Escolher Opções de Foto</string>
+    <string name="Options">Deseja tirar uma foto ou escolher da galeria?</string>
+    <string name="TakePhoto">Tirar Foto</string>
+    <string name="Error_CreatingImageFile">Erro ao criar a imagem</string>
+    <string name="Error_LaunchingCamera">Erro ao iniciar a câmera</string>
+    <string name="Gallery">Escolher da Galeria</string>
+    <string name="Quantity_">Quantidade: </string>
+    <string name="Address">Insira a sua Morada ou use o Mapa</string>
+    <string name="Flat_Suite_Floor">Apartamento/Suite/Andar</string>
+    <string name="Back">Voltar</string>
+    <string name="CheckOut">Finalizar Compra</string>
+    <string name="AddressMarker">Marcador de Morada</string>
+    <string name="NewAddress">Nova Morada</string>
+    <string name="PurchaseDone">Compra completa</string>
+    <string name="PurchaseMessage">Irás receber um email a pedir dados para pagamento</string>
+
+
+</resources>

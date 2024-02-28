@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/ProductName"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/Quantity"
+        android:layout_below="@id/editTextProductName"
+        android:layout_margin="16dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonProductPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/editTextQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F60505"
+        android:text="@string/Cancel" />
+
+    <Button
+        android:id="@+id/btnConfirmItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:background="#06EF10"
+        android:text="@string/Confirm" />
+
+</RelativeLayout>

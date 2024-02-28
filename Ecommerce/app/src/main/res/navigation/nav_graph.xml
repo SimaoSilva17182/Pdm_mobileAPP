@@ -1,0 +1,96 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.e_commerce.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_login_to_registration"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_login_to_mainMenu"
+            app:destination="@+id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_login_toSelf"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.e_commerce.RegisterFragment"
+        android:label="RegisterFragment">
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@+id/loginFragment" />
+        <action
+            android:id="@+id/action_register_toSelf"
+            app:destination="@+id/registerFragment" />
+        <action
+            android:id="@+id/action_toSelf"
+            app:destination="@+id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.e_commerce.MainMenu"
+        android:label="MainMenuFragment">
+        <action
+            android:id="@+id/action_mainMenu_to_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_cart"
+            app:destination="@+id/cartFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_addToCart"
+            app:destination="@+id/addToCartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.e_commerce.CartFragment"
+        android:label="CartFragment">
+        <action
+            android:id="@+id/action_cart_to_checkOut"
+            app:destination="@+id/CheckOutFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addToCartFragment"
+        android:name="com.example.e_commerce.AddToCartFragment"
+        android:label="AddToCartFragment">
+        <action
+            android:id="@+id/action_addToCart_to_cart"
+            app:destination="@+id/cartFragment" />
+        <action
+            android:id="@+id/action_addToCart_to_addItem"
+            app:destination="@+id/addItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.e_commerce.AddItemFragment"
+        android:label="AddItemFragment">
+        <action
+            android:id="@+id/action_addItem_to_addToCart"
+            app:destination="@+id/addToCartFragment" />
+        <action
+            android:id="@+id/action_addItem_toSelf"
+            app:destination="@+id/addItemFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CheckOutFragment"
+        android:name="com.example.e_commerce.CheckOutFragment"
+        android:label="CheckOutFragment">
+        <action
+            android:id="@+id/action_checkOut_to_cartFragment"
+            app:destination="@+id/cartFragment" />
+        <action
+            android:id="@+id/action_checkOut_to_MainMenu"
+            app:destination="@+id/mainMenuFragment" />
+    </fragment>
+
+</navigation>
